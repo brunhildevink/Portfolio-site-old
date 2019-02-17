@@ -12,6 +12,7 @@ a {
 
 .border {
   height: 100vh;
+  padding: 50px;
   width: 100vw;
   outline: 5px solid #112d4e;
   outline-offset: -50px;
@@ -57,18 +58,17 @@ li:nth-child(2) {
 
 .soundwave-bar {
   /* background: #fefaec; */
-  height: auto;
-  width: 11em;
-  left: 0;
-  right: 0;
-  text-align: center;
+  display: flex;
   margin: 0 auto;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 11em;
   top: calc(50% - 54px);
 }
 
 .bar {
-  margin: .5;
+  margin: .5px;
   height: 50px;
   width: .5em;
   background: #112d4e;
@@ -83,43 +83,19 @@ li:nth-child(2) {
 }
 
 .bar-1 {
-  height: 5px;
-}
-
-.bar-2 {
   height: 10px;
 }
 
+.bar-2 {
+  height: 20px;
+}
+
 .bar-3 {
-  height: 15px;
+  height: 10px;
 }
 
 .bar-4 {
   height: 20px;
-}
-
-.bar-5 {
-  height: 25px;
-}
-
-.bar-6 {
-  height: 30px;
-}
-
-.bar-7 {
-  height: 35px;
-}
-
-.bar-8 {
-  height: 40px;
-}
-
-.bar-9 {
-  height: 45px;
-}
-
-.bar-10 {
-  height: 50px;
 }
 
 /* Hovers and animations */
