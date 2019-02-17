@@ -10,6 +10,12 @@ a {
   color: #112d4e;
 }
 
+
+#logo {
+  height: 40px;
+  width: 40px;
+}
+
 .border {
   height: 100vh;
   padding: 50px;
@@ -30,28 +36,30 @@ a {
 }
 
 .wrapper ul {
-  display: inline-block;
+  display: flex;
   margin: 0;
   padding: 0;
   zoom: 1;
-  *display: inline;
+  justify-content: center;
 }
 
 .wrapper li {
-  float: left;
-  padding: 2px 5px;
+  padding: 2px 30px;
   margin: 0px 20px;
-  width: 6em;
   background: #fefaec;
   font-size: 1.8em;
 }
 
-li:nth-child(3) {
-  margin-left: 150px;
+li:nth-child(2) {
+
 }
 
-li:nth-child(2) {
-  margin-right: 150px;
+li:nth-child(3) {
+
+}
+
+li:nth-child(4) {
+
 }
 
 /* Soundwave bar */
@@ -68,34 +76,47 @@ li:nth-child(2) {
 }
 
 .bar {
-  margin: .5px;
-  height: 50px;
-  width: .5em;
+  margin: 5px;
+  height: 20px;
+  width: .6em;
+  border-radius: 3px;
   background: #112d4e;
   display: inline-flex;
-  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+  animation: audiowaves 1s infinite ease-in-out;   /* animation details set below */
   transition: height 1s;
   cursor: pointer;
 }
 
-.bar:hover {
-  height: 50px;
+@-webkit-keyframes audiowaves {
+  0% {height: 20px;}
+  50% {height: 50;}
+  100% {height: 20px;}
+}
+
+@keyframes audiowaves {
+  0% {height: 20px;}
+  50% {height: 50px;}
+  100% {height: 20px;}
 }
 
 .bar-1 {
-  height: 10px;
+  animation-delay: .3s;
 }
 
 .bar-2 {
-  height: 20px;
+  animation-delay: .5s;
 }
 
 .bar-3 {
-  height: 10px;
+  animation-delay: .1s;
 }
 
 .bar-4 {
-  height: 20px;
+  animation-delay: .5s;
+}
+
+.bar-5 {
+  animation-delay: .3s;
 }
 
 /* Hovers and animations */
