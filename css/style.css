@@ -1,0 +1,151 @@
+body {
+  position: relative;
+  max-height: 100vh;
+  max-width: 100vw;
+  background: #fefaec;
+  font-family: 'Rozha One', serif;
+}
+
+a {
+  color: #112d4e;
+}
+
+.border {
+  height: 100vh;
+  width: 100vw;
+  outline: 5px solid #112d4e;
+  outline-offset: -50px;
+  border-radius: 10000px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.wrapper ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+  *display: inline;
+}
+
+.wrapper li {
+  float: left;
+  padding: 2px 5px;
+  margin: 0px 20px;
+  width: 6em;
+  background: #fefaec;
+  font-size: 1.8em;
+}
+
+li:nth-child(3) {
+  margin-left: 150px;
+}
+
+li:nth-child(2) {
+  margin-right: 150px;
+}
+
+/* Soundwave bar */
+
+.soundwave-bar {
+  /* background: #fefaec; */
+  height: auto;
+  width: 11em;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: calc(50% - 54px);
+}
+
+.bar {
+  margin: .5;
+  height: 50px;
+  width: .5em;
+  background: #112d4e;
+  display: inline-flex;
+  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+  transition: height 1s;
+  cursor: pointer;
+}
+
+.bar:hover {
+  height: 50px;
+}
+
+.bar-1 {
+  height: 5px;
+}
+
+.bar-2 {
+  height: 10px;
+}
+
+.bar-3 {
+  height: 15px;
+}
+
+.bar-4 {
+  height: 20px;
+}
+
+.bar-5 {
+  height: 25px;
+}
+
+.bar-6 {
+  height: 30px;
+}
+
+.bar-7 {
+  height: 35px;
+}
+
+.bar-8 {
+  height: 40px;
+}
+
+.bar-9 {
+  height: 45px;
+}
+
+.bar-10 {
+  height: 50px;
+}
+
+/* Hovers and animations */
+
+li > a {
+  position: relative;
+  text-decoration: none;
+}
+
+li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #112d4e;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
