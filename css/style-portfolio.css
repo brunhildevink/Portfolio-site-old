@@ -1,0 +1,28 @@
+article .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row-item {
+  border: 5px solid #112d4e;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.row-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.row-item p img {
+  margin: 0;
+  padding: 10px;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  
+}
