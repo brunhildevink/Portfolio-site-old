@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="navbar">
         <ul>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="index.html"><img id="logo" src="media/logo.png" alt=""></a></li>
-          <li><a href="index.html">About Me</a></li>
+          <li><a href="#" id="portfolio">Portfolio</a></li>
+          <li><a href="#" id="logo"><img id="logo" src="media/logo.png" alt=""></a></li>
+          <li><a href="#" id="about">About Me</a></li>
         </ul>
       </div>
 
@@ -27,11 +25,13 @@
       <img src="media/leaves.svg" alt="icon of leaves" class="borderdetails leaves">
 
       <div class="border">
-        <article>
+        <article id="landing--page" class="">
           <div class="row">
             <h1>Hello!</h1>
             <p>I am Brunhilde. <br>Coder, designer <br>and illustrator.</p>
-            <p>My site is still <br>under 🛠️ .<br>Come back soon!</p>
+            <p>My site is still</p>
+            <p id="emoji">under 🛠️ .</p>
+            <p>Come back soon!</p>
             <!-- <ul><li><a class="btn" href="index.html">View My Work</a></li></ul> -->
             <ul><a href="https://twitter.com/BrunhildeVink" target="_blank" class="fa fa-twitter"></a></ul>
             <ul><a href="https://github.com/brunhildevink" target="_blank" class="fa fa-github"></a></ul>
@@ -39,6 +39,37 @@
           <div class="row">
             <img src="media/me-01.png" alt="icon of me">
           </div>
+        </article>
+
+        <article id="about--page" class="hide">
+            <div class="container--about--page">
+              <h1>About Me</h1>
+              <p>I am Brunhilde. Coder, designer and illustrator.</p>
+              <p>I love code, animals, culture and a good cup of coffee.</p>
+              <div class="container">
+                <div class="box">
+                  <p>My technical skills:</p>
+                  <ul class="skills">
+                    <li>HTML5</li>
+                    <li>css3</li>
+                    <li>ES6</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <p>Creative skills:</p>
+                  <ul class="skills">
+                    <li>Photoshop</li>
+                    <li>illustrator</li>
+                    <li>After Effects</li>
+                    <li>Illustration</li>
+                    <li>Graphic Design</li>
+                    <li>UI/UX Design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
         </article>
         <!-- <div class="soundwave-bar">
           <div class="bar bar-1">
@@ -54,5 +85,7 @@
         </div> -->
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
