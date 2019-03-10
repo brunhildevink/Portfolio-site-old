@@ -14,80 +14,88 @@
       <div class="navbar">
         <ul>
           <li><a href="#" id="portfolio">Portfolio</a></li>
-          <li><a href="#" id="logo"><img id="logo" src="media/logo.png" alt=""></a></li>
+          <li><a href="#" id="logo" class="active"><img id="logo" src="media/logo.png" alt=""></a></li>
           <li><a href="#" id="about">About Me</a></li>
         </ul>
       </div>
 
-      <div class="navbar-background">
-      </div>
-
+      <div class="navbar-foreground"></div>
       <img src="media/hedgehog.svg" alt="icon of hedgehog" class="borderdetails hedgehog">
+      <img src="media/leaf-alone.svg" alt="icon of leaf" class="borderdetails leaf leaf1">
+      <img src="media/leaf-alone.svg" alt="icon of leaf" class="borderdetails leaf leaf2">
       <img src="media/leaves.svg" alt="icon of leaves" class="borderdetails leaves">
+      <div class="border"></div> <!-- border -->
+      <div class="navbar-background"></div>
 
-      <div class="border">
-        <article id="landing--page" class="">
-          <div class="row">
-            <h1>Hello!</h1>
-            <p>I am Brunhilde. <br>Coder, designer <br>and illustrator.</p>
-            <p>My site is still</p>
-            <p id="emoji">under 🛠️ .</p>
-            <p>Come back soon!</p>
-            <!-- <ul><li><a class="btn" href="index.html">View My Work</a></li></ul> -->
-            <ul><a href="https://twitter.com/BrunhildeVink" target="_blank" class="fa fa-twitter"></a></ul>
-            <ul><a href="https://github.com/brunhildevink" target="_blank" class="fa fa-github"></a></ul>
-          </div>
-          <div class="row">
-            <img src="media/me-01.png" alt="icon of me">
-          </div>
-        </article>
+      <article id="landing--page" class="">
+        <div class="row">
+          <h1>Hello!</h1>
+          <p class="lg">I am Brunhilde. <br>Coder, designer <br>and illustrator.</p>
+          <p class="lg">My site is still</p>
+          <p class="lg">under 🛠️ .</p>
+          <p class="lg">Come back soon!</p>
+          <!-- <ul><li><a class="btn" href="index.html">View My Work</a></li></ul> -->
+          <ul><a href="https://twitter.com/BrunhildeVink" target="_blank" class="fa fa-twitter"></a></ul>
+          <ul><a href="https://github.com/brunhildevink" target="_blank" class="fa fa-github"></a></ul>
+        </div>
+        <div class="row">
+          <img src="media/me-01.png" alt="icon of me">
+        </div>
+      </article>
 
-        <article id="about--page" class="hide">
-            <div class="container--about--page">
-              <img src="media/me.jpg" alt="picture of me" class="picture--me">
-              <p>
-              Hey there! I am Brunhilde. Coder, designer and illustrator.<br>
-              I love code, animals, culture and a good cup of coffee.<br>
-              <a href="media/CV.pdf" target="_blank" download>Download my <strong>resume</strong></a>
-              </p>
-              <div class="container">
-                <div class="box">
-                  <p>My technical skills:</p>
-                  <ul class="skills">
-                    <li>HTML5</li>
-                    <li>css3</li>
-                    <li>ES6</li>
-                    <li>jQuery</li>
-                    <li>Bootstrap</li>
-                  </ul>
-                </div>
-                <div class="box">
-                  <p>Creative skills:</p>
-                  <ul class="skills">
-                    <li>Photoshop</li>
-                    <li>illustrator</li>
-                    <li>After Effects</li>
-                    <li>Illustration</li>
-                    <li>Graphic Design</li>
-                    <li>UI/UX Design</li>
-                  </ul>
-                </div>
+
+      <article id="about--page" class="hide">
+          <div class="container--about--page">
+            <img src="media/me.jpg" alt="picture of me" class="picture--me">
+            <p class="md">
+            Hey there! I am Brunhilde. Coder, designer and illustrator.<br>
+            I love code, animals, culture and a good cup of coffee.<br>
+            <a href="media/CV.pdf" target="_blank" download>Download my resume</a>
+            </p>
+            <div class="container">
+              <div class="box">
+                <p class="md">My technical skills:</p>
+                <ul class="skills sm">
+                  <li>HTML5</li>
+                  <li>css3</li>
+                  <li>ES6</li>
+                  <li>jQuery</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+              <div class="box">
+                <p class="md">Creative skills:</p>
+                <ul class="skills sm">
+                  <li>Photoshop</li>
+                  <li>illustrator</li>
+                  <li>After Effects</li>
+                  <li>Illustration</li>
+                  <li>Graphic Design</li>
+                  <li>UI/UX Design</li>
+                </ul>
               </div>
             </div>
-        </article>
-        <!-- <div class="soundwave-bar">
-          <div class="bar bar-1">
           </div>
-          <div class="bar bar-2">
+      </article>
+
+      <article id="portfolio--page" class="hide">
+        <div class="col">
+          <div class="row">
+            <h2>Working with API's</h2>
+            <p class="md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="portfolio/StarWarsApi/index.html" target="_blank" class="sm">See more</a>
           </div>
-          <div class="bar bar-3">
+          <div class="portfolio-img row">
+            <img src="media/work/starwars-api.png" alt="star wars api">
           </div>
-          <div class="bar bar-4">
-          </div>
-          <div class="bar bar-5">
-          </div>
-        </div> -->
-      </div>
+        </div>
+
+        <span></span>
+
+
+
+      </article>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/app.js"></script>
